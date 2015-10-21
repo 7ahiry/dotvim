@@ -1,6 +1,8 @@
 This repository contains my dotvim configuration files and plugins install as
 git submodules and using the [pathogen](https://github.com/tpope/vim-pathogen) extension
 
+This information comes from a [vimcast](http://vimcasts.org/episodes/synchronizing-plugins-with-git-submodules-and-pathogen/)
+
 ## how to add other plugins using submodule
 ```git
 cd ~/.vim
