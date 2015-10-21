@@ -1,0 +1,3 @@
+[submodule "bundle/vim-smooth-scroll"]
+	path = bundle/vim-smooth-scroll
+	url = https://github.com/terryma/vim-smooth-scroll.git
