@@ -109,13 +109,13 @@ set nofoldenable
 
 " Undo
 set undofile                " Save undo's after file closes
-set undodir=/home/tah/.vim/undo " where to save undo histories
+set undodir=~./.tmp/undo " where to save undo histories
 set undolevels=1000         " How many undos
 set undoreload=10000        " number of lines to save for undo
 set foldlevel=5
 
 "swap files
-set dir=~/.vim/swap//,/var/tmp//,/tmp//,.
+set dir=~/.tmp/swap//,/var/tmp//,/tmp//,.
 
 " color scheme
 "syntax enable
@@ -162,9 +162,9 @@ nmap <leader>t <Plug>(easymotion-s2)
 let g:EasyMotion_smartcase = 1
 
 "insearch
-map /  <Plug>(incsearch-forward)
-map ?  <Plug>(incsearch-backward)
-map g/ <Plug>(incsearch-stay)
+"map /  <Plug>(incsearch-forward)
+"map ?  <Plug>(incsearch-backward)
+"map g/ <Plug>(incsearch-stay)
 
 " format a paragraph
 nnoremap <silent> Q gqip
