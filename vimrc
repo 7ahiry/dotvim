@@ -162,9 +162,11 @@ nmap <leader>t <Plug>(easymotion-s2)
 let g:EasyMotion_smartcase = 1
 
 "insearch
-"map /  <Plug>(incsearch-forward)
-"map ?  <Plug>(incsearch-backward)
-"map g/ <Plug>(incsearch-stay)
+map /  <Plug>(incsearch-forward)
+map ?  <Plug>(incsearch-backward)
+map g/ <Plug>(incsearch-stay)
+let g:incsearch#consistent_n_direction = 1
+let g:incsearch#magic = '\v' " very magic
 
 " format a paragraph
 nnoremap <silent> Q gqip
