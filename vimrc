@@ -168,6 +168,10 @@ map g/ <Plug>(incsearch-stay)
 let g:incsearch#consistent_n_direction = 1
 let g:incsearch#magic = '\v' " very magic
 
+" map tab to autocompletion in insert mode
+imap <Tab> <C-P>
+
+
 " format a paragraph
 nnoremap <silent> Q gqip
 
