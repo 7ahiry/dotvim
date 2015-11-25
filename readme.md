@@ -23,8 +23,7 @@ git submodule init
 git submodule update
 ```
 
-## how to update on other machine (provided that we have already cloned this 
-repository)
+## how to update on other machine (provided that we have already cloned this repository)
 
 ```git
 git pull origin master
