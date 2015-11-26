@@ -222,3 +222,17 @@ call unite#filters#matcher_default#use(['matcher_fuzzy'])
 nnoremap <leader>f :Unite -no-split -buffer-name=files   -start-insert file_rec<cr>
 nnoremap <leader>b :Unite -no-split -buffer-name=buffer  buffer<cr>
 
+" Add folding toggle method.
+" You can manually set fold by using
+" zf#j creates a fold from the cursor down # lines.
+" zf/string creates a fold from the cursor to string
+" https://www.linux.com/learn/tutorials/442438-vim-tips-folding-fun
+nmap <Leader>fm :call <SID>ToggleFold()<CR>
+function! s:ToggleFold()
+    if &foldmethod == 'indent'
+        let &l:foldmethod = 'manual'
+    else
+        let &l:foldmethod = 'indent'
+    endif
+    echo 'foldmethod is now ' . &l:foldmethod
+endfunction
