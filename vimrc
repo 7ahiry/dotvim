@@ -214,3 +214,11 @@ if has("gui_running")
     set guifont=inconsolata\ 8
   endif
 endif
+
+"Unite vim
+"https://github.com/shougo/unite.vim
+"http://www.codeography.com/2013/06/17/replacing-all-the-things-with-unite-vim.htmlo
+call unite#filters#matcher_default#use(['matcher_fuzzy'])
+nnoremap <leader>f :Unite -no-split -buffer-name=files   -start-insert file_rec<cr>
+nnoremap <leader>b :Unite -no-split -buffer-name=buffer  buffer<cr>
+
