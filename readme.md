@@ -23,6 +23,15 @@ git submodule init
 git submodule update
 ```
 
+## how to update on other machine (provided that we have already cloned this repository)
+
+```git
+git pull origin master
+git submodule init
+git submodule update
+```
+
+
 ## upgrading a bundle
 ```git
 cd ~/.vim/bundle/fugitive
