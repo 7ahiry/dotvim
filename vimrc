@@ -236,3 +236,7 @@ function! s:ToggleFold()
     endif
     echo 'foldmethod is now ' . &l:foldmethod
 endfunction
+
+" Retab file
+nnoremap <leader>= mrgg=G`r
+
