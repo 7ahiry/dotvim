@@ -19,6 +19,3 @@
 [submodule "bundle/unite"]
 	path = bundle/unite
 	url = https://github.com/shougo/unite.vim
-[submodule "tabular"]
-	path = tabular
-	url = git://github.com/godlygeek/tabular.git
