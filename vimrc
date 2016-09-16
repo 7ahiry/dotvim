@@ -77,8 +77,8 @@ nnoremap <leader>6 :Scratch<CR>
 map <F4> <Esc>:LLPStartPreview<CR>
 map <F5> <Esc>:LanguageToolCheck<CR><CR>
 map <F6> <Esc>:setlocal spell spelllang=en<CR>
-map <F7> <Esc>:setlocal spell spelllang=fr<CR>
-map <F8> <Esc>z=
+"map <F7> <Esc>:setlocal spell spelllang=fr<CR>
+"map <F8> <Esc>z=
 map <F9> <Esc>:setlocal nospell<CR>
 :set pastetoggle=<F10>
 let g:languagetool_jar='~/.vim/LanguageTool-2.9/languagetool-commandline.jar'
@@ -253,3 +253,10 @@ if &term =~ "xterm\\|rxvt"
   autocmd VimLeave * silent !echo -ne "\033]112\007"
   " use \003]12;gray\007 for gnome-terminal and rxvt up to version 9.21
 endif
+
+
+" Highlight current position
+map  <F8> :set invcursorline<CR>
+imap <F8> <Esc>:set invcursorline<CR>a
+map  <F7> :set invcursorcolumn<CR>
+imap <F7> <Esc>:set invcursorcolumn<CR>a
