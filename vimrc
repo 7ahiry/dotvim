@@ -169,7 +169,8 @@ let g:incsearch#consistent_n_direction = 1
 let g:incsearch#magic = '\v' " very magic
 
 " map tab to autocompletion in insert mode
-imap <Tab> <C-P>
+" imap <Tab> <C-P>
+imap <leader><Tab> <C-P>
 
 
 " format a paragraph
@@ -239,20 +240,6 @@ endfunction
 
 " Retab file
 nnoremap <leader>= mrgg=G`r
-
-
-" Change cursor color depending on terminal
-
-if &term =~ "xterm\\|rxvt"
-  " use an orange cursor in insert mode
-  let &t_SI = "\<Esc>]12;orange\x7"
-  " use a red cursor otherwise
-  let &t_EI = "\<Esc>]12;red\x7"
-  silent !echo -ne "\033]12;red\007"
-  " reset cursor when vim exits
-  autocmd VimLeave * silent !echo -ne "\033]112\007"
-  " use \003]12;gray\007 for gnome-terminal and rxvt up to version 9.21
-endif
 
 
 " Highlight current position
