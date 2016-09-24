@@ -247,3 +247,24 @@ map  <F8> :set invcursorline<CR>
 imap <F8> <Esc>:set invcursorline<CR>a
 map  <F7> :set invcursorcolumn<CR>
 imap <F7> <Esc>:set invcursorcolumn<CR>a
+
+" Python testing
+au BufNewFile,BufRead *.py set tabstop=4 softtabstop=4 shiftwidth=4 textwidth=79 expandtab autoindent fileformat=unix
+
+
+augroup vimrc_autocmds
+    autocmd!
+    " highlight characters past column 100
+    autocmd FileType python highlight Excess ctermbg=DarkGrey guibg=Black
+    autocmd FileType python match Excess /\%100v.*/
+    autocmd FileType python set nowrap
+    autocmd FileType text highlight Excess ctermbg=DarkGrey guibg=Black
+    autocmd FileType text match Excess /\%100v.*/
+    autocmd FileType text set nowrap
+    autocmd FileType plaintex highlight Excess ctermbg=DarkGrey guibg=Black
+    autocmd FileType plaintex match Excess /\%100v.*/
+    autocmd FileType plaintex set nowrap
+    autocmd FileType tex highlight Excess ctermbg=DarkGrey guibg=Black
+    autocmd FileType tex match Excess /\%100v.*/
+    autocmd FileType tex set nowrap
+    augroup END
