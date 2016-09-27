@@ -124,12 +124,6 @@ set foldlevel=5
 "swap files
 set dir=~/.tmp/swap//,/var/tmp//,/tmp//,.
 
-" color scheme
-"syntax enable
-"set background=dark
-"colorscheme base16-default
-colorscheme monokai
-set t_Co=256  " vim-monokai now only support 256 colours in terminal."
 
 " Search highlight
 :highlight Search ctermfg=black
@@ -295,6 +289,7 @@ map <Leader>r <esc>:b#<CR>
 " wget -O wombat256mod.vim http://www.vim.org/scripts/download_script.php?src_id=13400
 set t_Co=256
 color wombat256mod
+" colorscheme monokai
 
 
 " easier formatting of paragraphs
