@@ -3,6 +3,13 @@ syntax on
 filetype plugin indent on
 call pathogen#helptags()
 
+
+
+
+" Automatic reloading of .vimrc
+autocmd! bufwritepost .vimrc source %
+
+
 " tab options
 set nocompatible
 set modelines=0
@@ -174,7 +181,7 @@ imap <leader><Tab> <C-P>
 
 
 " format a paragraph
-nnoremap <silent> Q gqip
+" nnoremap <silent> Q gqip
 
 " vim-latex-live-preview
 let g:livepreview_previewer = 'zathura'
@@ -268,3 +275,26 @@ augroup vimrc_autocmds
     autocmd FileType tex match Excess /\%100v.*/
     autocmd FileType tex set nowrap
     augroup END
+
+
+" Quick quit command
+noremap <Leader>q :quit<CR>
+noremap <Leader>Q :qa!<CR>
+
+" easier moving between tabs
+map <Leader>t <esc>:tabprevious<CR>
+map <Leader>y <esc>:tabnext<CR>
+
+" easier moving between buffer
+map <Leader>r <esc>:b#<CR>
+
+" Color scheme
+" mkdir -p ~/.vim/colors && cd ~/.vim/colors
+" wget -O wombat256mod.vim http://www.vim.org/scripts/download_script.php?src_id=13400
+set t_Co=256
+color wombat256mod
+
+
+" easier formatting of paragraphs
+vmap Q gq
+nmap Q gqap
