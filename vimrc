@@ -128,6 +128,8 @@ set dir=~/.tmp/swap//,/var/tmp//,/tmp//,.
 "syntax enable
 "set background=dark
 "colorscheme base16-default
+colorscheme monokai
+set t_Co=256  " vim-monokai now only support 256 colours in terminal."
 
 " Search highlight
 :highlight Search ctermfg=black
