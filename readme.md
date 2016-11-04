@@ -21,6 +21,8 @@ ln -s ~/.vim/gvimrc ~/.gvimrc
 cd ~/.vim
 git submodule init
 git submodule update
+
+mkdir -p ~/.tmp/undo ~/.tmp/swap
 ```
 
 ## how to update on other machine (provided that we have already cloned this repository)
