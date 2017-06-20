@@ -34,3 +34,6 @@
 [submodule "bundle/LaTeX-Box"]
 	path = bundle/LaTeX-Box
 	url = https://github.com/LaTeX-Box-Team/LaTeX-Box.git
+[submodule "bundle/vim-getting-things-down"]
+	path = bundle/vim-getting-things-down
+	url = https://github.com/rlue/vim-getting-things-down.git
