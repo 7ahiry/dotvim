@@ -296,3 +296,6 @@ color wombat256mod
 " easier formatting of paragraphs
 vmap Q gq
 nmap Q gqap
+
+" vimwiki configuration
+let g:vimwiki_list = [{'path':'~/.wiki', 'path_html':'~/.wiki/export/html/', 'syntax': 'markdown', 'ext': '.md'}]
